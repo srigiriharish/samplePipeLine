@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Compile') {
              steps{
               withMaven(maven : 'maven'){
               sh 'mvn compile'
